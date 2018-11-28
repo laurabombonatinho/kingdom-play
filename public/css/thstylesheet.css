@@ -1,0 +1,38 @@
+.login-page .form-holder .info {
+    background: #cc0000 !important;
+    color: #fff;
+}
+
+.btn-primary {
+    color: color-yiq(#cc0000) !important;
+    background-color: #cc0000 !important;
+    border-color: #cc0000 !important;
+}
+
+.login-page::before {
+    background:#2d3035 !important;
+    background-size: cover;
+}
+
+.login-page .form-holder .form {
+    background: transparent !important;
+    border-radius: 50px !important;
+}
+
+.login-page .form-holder .form a.forgot-pass, .login-page .form-holder .form a.signup {
+    font-size: 0.9rem;
+    color:#cc0000 !important;
+}
+nav.navbar {
+    background: #2d3035;
+    color: #8a8d93;
+    border-bottom: 1px solid transparent !important; 
+}
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    background-color:#cc0000 !important;
+  }
