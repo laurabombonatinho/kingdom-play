@@ -15,12 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('usuarios', 'UsuarioController');
-Route::resource('filmes', 'FilmeController');
-Route::resource('series', 'SerieController');
-Route::resource('temporadas', 'TemporadaController');
+Route::get('/Login', function () {
+    return view('Login');
+});
 
 
+/*
     
     Route::get('/ola', function () {
     return "<h1>Seja bem vindo!</h1>";
@@ -38,11 +38,11 @@ Route::resource('temporadas', 'TemporadaController');
     return "<h1>Olá $nome $sobrenome ! Seja bem vindo !</h1>";
     });/*/
     
-    Route::get('/nomesobrenome/{nome}/{sobrenome}', function ($nome,$sobrenome) {
+  /*  Route::get('/nomesobrenome/{nome}/{sobrenome}', function ($nome,$sobrenome) {
     for($i=0;$i<10;$i++) {
     echo "<h1>Olá $nome $sobrenome ! Seja bem vindo !</h1>";
     }
-    });
+    });*/
     //Usando o for/
     /*Route::get('/nomevezes/{nome}/{num}', function ($nome,$num) {
     if(is_integer($num)){
@@ -56,7 +56,7 @@ Route::resource('temporadas', 'TemporadaController');
     
     });*/
     
-    Route::get('/nomevezes/{nome}/{num}', function ($nome,$num) {
+   /* Route::get('/nomevezes/{nome}/{num}', function ($nome,$num) {
     
         for($i=0;$i<$num;$i++) {
             echo "<h1>Olá $nome ! Seja bem vindo !</h1>";
@@ -88,4 +88,4 @@ Route::resource('temporadas', 'TemporadaController');
     
     //Redirecionar para uma outra Pagina/
     //301 - Redirecionamento permanente de URL/
-    Route::redirect('/ola','/olavisitante',301);
+    Route::redirect('/ola','/olavisitante',301);*/
