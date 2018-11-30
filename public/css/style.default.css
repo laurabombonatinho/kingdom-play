@@ -3468,3 +3468,10 @@ pre code {
   background: #2d3035;
   border-color: #34373d;
 }
+
+.title {
+  font-size: 30px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  text-align: center !important;
+}
