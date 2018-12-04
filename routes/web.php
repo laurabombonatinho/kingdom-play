@@ -93,3 +93,6 @@ Route::get('/create', function () {
     //Redirecionar para uma outra Pagina/
     //301 - Redirecionamento permanente de URL/
     Route::redirect('/ola','/olavisitante',301);*/
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

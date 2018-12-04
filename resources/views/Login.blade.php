@@ -29,11 +29,13 @@
   </head>
   <body>
       <nav class="navbar">
+
           <div class="navbar-brand" href="#">
             <img src="imgs/logo.png" width="60" class="d-inline-block align-top" alt="">
             <label style="margin-top:20px; font-size: 26px; font-weight: bold; color:#cc0000">&nbspKingdom Play</label>
           </div>
         </nav>
+
     <div class="login-page">
       <div class="container d-flex align-items-center">
         <div class="form-holder has-shadow">
@@ -79,3 +81,9 @@
     <script src="js/front.js"></script>
   </body>
 </html>
+
+<li class="nav-item">
+@if (Route::has('register'))
+     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+@endif
+</li>
