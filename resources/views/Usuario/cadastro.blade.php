@@ -50,15 +50,22 @@
                 <div class="content">
                   <form method="get" class="form-validate">
                     <div class="form-group">
-                      <input id="login-username" type="text" name="loginUsername" required data-msg="Please enter your username" class="input-material">
-                      <label for="login-username" class="label-material">Usuário</label>
+                      <input id="login-username" type="text" name="loginUsername" required data-msg="Informe seu nome" class="input-material">
+                      <label for="login-username" class="label-material">Nome</label>
                     </div>
                     <div class="form-group">
-                      <input id="login-password" type="password" name="loginPassword" required data-msg="Please enter your password" class="input-material">
+                      <input id="login-username" type="text" name="loginUsername" required data-msg="Informe seu nome de usuário" class="input-material">
+                      <label for="login-username" class="label-material">Nome de usuário</label>
+                    </div>
+                    <div class="form-group">
+                      <input id="login-username" type="text" name="loginUsername" required data-msg="Informe seu e-mail" class="input-material">
+                      <label for="login-username" class="label-material">E-mail</label>
+                    </div>
+                    <div class="form-group">
+                      <input id="login-password" type="password" name="loginPassword" required data-msg="Informe sua senha" class="input-material">
                       <label for="login-password" class="label-material">Senha</label>
                     </div><a id="login" href="index.html" class="btn btn-primary">Entrar</a>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
-                  </form><a href="#" class="forgot-pass">Esqueceu sua senha?</a><br><small>Não possui conta? </small><a href="register.html" class="signup">Cadastre-se</a>
                 </div>
               </div>
             </div>
@@ -81,4 +88,3 @@
     <script src="js/front.js"></script>
   </body>
 </html>
-

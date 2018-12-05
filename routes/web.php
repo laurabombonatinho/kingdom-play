@@ -19,9 +19,13 @@ Route::get('/Login', function () {
     return view('Login');
 });
 
-Route::get('/create', function () {
-    return view('Usuario/create');
+Route::get('/cadastro', function () {
+    return view('cadastro');
 });
+
+// Route::get('/create', function () {
+//     return view('Usuario/create');
+// });
 
 
 /*

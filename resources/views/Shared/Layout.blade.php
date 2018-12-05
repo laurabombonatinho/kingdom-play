@@ -87,7 +87,7 @@
                   <div class="col-lg-3 col-md-3"><strong class="text-uppercase"></strong>
                     <ul class="list-unstyled mb-3">
                       <li><a href="#">Família</a></li>
-					  <li><a href="#">Fantasia</a></li>
+					            <li><a href="#">Fantasia</a></li>
                       <li><a href="#">Faroeste</a></li>
                       <li><a href="#">Ficção Científica</a></li>
                       <li><a href="#">Guerra</a></li>
@@ -110,7 +110,7 @@
 		  
            
             <!-- Log out -->
-            <div class="list-inline-item logout"><a id="logout" href="login.html" class="nav-link">Sair <i class="icon-logout"></i></a></div>
+            <div class="list-inline-item logout"><a id="logout" href="#" class="nav-link">Sair <i class="icon-logout"></i></a></div>
 			<!-- End Log out -->
 			
           </div>
@@ -148,7 +148,7 @@
           <li> <a href="#"> <i class="fas fa-fire"></i>Novidades </a></li>
 		  <li> <a href="#"> <i class="far fa-clock"></i>Recentes </a></li>
 		  <li> <a href="#"> <i class="fas fa-splotch"></i>Populares </a></li>
-		<li><a href="login.html"> <i class="icon-logout"></i>Sair </a></li>          	
+		<li><a href="#"> <i class="icon-logout"></i>Sair </a></li>          	
         </ul>
       </nav>
       <!-- Sidebar Navigation end-->
