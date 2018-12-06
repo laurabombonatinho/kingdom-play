@@ -1571,7 +1571,6 @@ nav#sidebar.shrinked a[aria-expanded="true"]::after {
   height: 100%;
   display: block;
   z-index: -1;
-  background: url(../img/bg.jpeg);
   background-size: cover;
   position: absolute;
   top: 0;
@@ -1617,7 +1616,6 @@ nav#sidebar.shrinked a[aria-expanded="true"]::after {
 }
 
 .login-page .form-holder .form {
-  background: #2d3035;
 }
 
 .login-page .form-holder .form .form-group {

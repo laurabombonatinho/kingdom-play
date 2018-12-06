@@ -1,1 +1,15 @@
-/* your styles go here */
+.btn-link {
+    color: #cc0000 !important;
+}
+
+.btn-link:hover {
+    color: #d44658 !important;
+}
+
+nav.navbar .sidebar-toggle {
+border: none !important;
+     background: none !important; 
+    color:#cc0000 !important;
+    font-size: 30px !important;
+}
+

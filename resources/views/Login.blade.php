@@ -44,11 +44,16 @@
               <div class="col-md-4">
               <img src="imgs/imagenzinha.png" alt="">
               </div>
+              
+
               <div class="col-md-3"></div>
             <div class="col-md-5">
               <div class="form d-flex align-items-center">
                 <div class="content">
                   <form method="get" class="form-validate">
+
+
+
                     <div class="form-group">
                       <input id="login-username" type="text" name="loginUsername" required data-msg="Please enter your username" class="input-material">
                       <label for="login-username" class="label-material">Usuário</label>
@@ -56,7 +61,8 @@
                     <div class="form-group">
                       <input id="login-password" type="password" name="loginPassword" required data-msg="Please enter your password" class="input-material">
                       <label for="login-password" class="label-material">Senha</label>
-                    </div><a id="login" href="index.html" class="btn btn-primary">Entrar</a>
+
+                    </div><a id="login" href="/" class="btn btn-primary">Entrar</a>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
                   </form><a href="#" class="forgot-pass">Esqueceu sua senha?</a><br><small>Não possui conta? </small><a href="register.html" class="signup">Cadastre-se</a>
                 </div>
