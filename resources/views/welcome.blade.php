@@ -8,7 +8,6 @@
   <div class="container">
 
   <div class="row">
-
   <div class="col-sm-4">
   <div class="card" style="width:300px">
     <img class="card-img-top" src="img/elite.jpg" alt="Card image" style="width:100%">

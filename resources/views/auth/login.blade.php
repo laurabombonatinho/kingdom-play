@@ -14,10 +14,8 @@
               <div class="col-md-5">
               <div class="form d-flex align-items-center">
                 <div class="content">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" action="{{ route('\') }}">
                         @csrf
-
-
 
 
                         <div class="form-group row">
