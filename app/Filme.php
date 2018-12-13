@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-
+use Illuminate\Http\Request;
 use App\Models\Usuario;
 
 class Filme extends Model
@@ -20,6 +20,3 @@ class Filme extends Model
         return $this->belongsToMany(Usuario::class);
     }
 }
-/*
-, 'estatistica__filmes',
-         'filmes_id', 'usuarios_id'*/

@@ -110,7 +110,8 @@
 		  
            
             <!-- Log out -->
-            <div class="list-inline-item logout"><a id="logout" href="login" class="nav-link">Sair <i class="icon-logout"></i></a></div>
+            <div class="list-inline-item logout"><a id="logout" href="Login" class="nav-link">Sair <i class="icon-logout"></i></a></div>
+            
 			<!-- End Log out -->
 			
           </div>

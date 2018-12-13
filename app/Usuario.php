@@ -25,4 +25,9 @@ class Usuario extends Model
     {
         return $this->belongsToMany(Episodio::class);
     }
+
+    ///
+    public function usuarios(){
+        return $this->hasMany('App\Produto', 'marca_id');
+    }
 }

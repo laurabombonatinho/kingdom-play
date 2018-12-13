@@ -28,7 +28,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-      <nav class="navbar">
+      <!-- <nav class="navbar">
 
           <div class="navbar-brand" href="#">
             <img src="imgs/logo.png" width="60" class="d-inline-block align-top" alt="">
@@ -52,27 +52,53 @@
                     <div class="form-group">
                       <input id="login-username" type="text" name="loginUsername" required data-msg="Informe seu nome" class="input-material">
                       <label for="login-username" class="label-material">Nome</label>
-                    </div>
-                    <div class="form-group">
+                    </div> -->
+                    <!--<div class="form-group">
                       <input id="login-username" type="text" name="loginUsername" required data-msg="Informe seu nome de usuário" class="input-material">
                       <label for="login-username" class="label-material">Nome de usuário</label>
-                    </div>
-                    <div class="form-group">
+                    </div>-->
+                    <!-- <div class="form-group">
                       <input id="login-username" type="text" name="loginUsername" required data-msg="Informe seu e-mail" class="input-material">
                       <label for="login-username" class="label-material">E-mail</label>
                     </div>
                     <div class="form-group">
                       <input id="login-password" type="password" name="loginPassword" required data-msg="Informe sua senha" class="input-material">
                       <label for="login-password" class="label-material">Senha</label>
-                    </div><a id="login" href="/" class="btn btn-primary">Entrar</a>
+                    </div><a id="login" href="/" class="btn btn-primary">Cadastrar</a> -->
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
-                </div>
+                <!-- </div>
               </div>
             </div>
           </div>
           
         </div>
-      </div>
+      </div> -->
+
+ @if($errors->any())
+            <div class="alert alert-danger" role="alert">
+                @foreach ($errors->all() as $error)
+                    {{ $error }}<br>
+                @endforeach
+            </div>
+        @endif
+    <div class="panel panel-default">
+
+        <div class="panel-heading"><h3>Cadastre a marca</h3></div>
+        <div class="panel-body">
+            <form method="post" action="{{route ('marcas.store')}}">
+                {{ csrf_field() }}
+                <h4>Dados da marca</h4>
+                <hr>
+                <div class="form-group">
+                    <label for="descricao">Nome</label>
+                    <input type="text" class="form-control" placeholder="Nome" name="nome" required>
+                </div>
+                <a href="{{ url()->previous() }}" class="btn btn-default">Voltar</a>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
       <div class="copyrights text-center">
         <p>Design by <a href="https://bootstrapious.com" class="external">Bootstrapious</a></p>
         <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->

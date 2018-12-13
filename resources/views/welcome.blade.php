@@ -1,7 +1,11 @@
 @extends('Shared/Layout')
 
 @section('content')
-
+<a href="{{route('filmes.create')}}" class="signup">Criar filmes</a>
+<a href="{{route('filmes.index')}}" class="signup">Listar filmes</a>
+<a href="{{route('series.create')}}" class="signup">Criar Serie</a>
+<a href="{{route('series.index')}}" class="signup">Listar Serie</a>
+<a href="{{route('temporadas.create')}}" class="signup">Criar Temporada</a>
 
 <h3 class="title"><i class="icon-light-bulb"></i> Sugestões </h3>
 

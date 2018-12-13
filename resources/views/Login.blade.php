@@ -29,10 +29,10 @@
   </head>
   <body>
       <nav class="navbar">
-
+      <a href="{{route('filmes.index')}}" class="signup">Listar filmes</a>
           <div class="navbar-brand" href="#">
-            <img src="imgs/logo.png" width="60" class="d-inline-block align-top" alt="">
-            <label style="margin-top:20px; font-size: 26px; font-weight: bold; color:#cc0000">&nbspKingdom Play</label>
+            <!-- <img src="imgs/logo.png" width="60" class="d-inline-block align-top" alt="">
+            <label style="margin-top:20px; font-size: 26px; font-weight: bold; color:#cc0000">&nbspKingdom Play</label> -->
           </div>
         </nav>
 
@@ -64,7 +64,7 @@
 
                     </div><a id="login" href="/" class="btn btn-primary">Entrar</a>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
-                  </form><a href="#" class="forgot-pass">Esqueceu sua senha?</a><br><small>Não possui conta? </small><a href="register.html" class="signup">Cadastre-se</a>
+                  </form><a href="#" class="forgot-pass">Esqueceu sua senha?</a><br><small>Não possui conta? </small><a href="{{route('usuarios.create')}}" class="signup">Cadastre-se</a>
                 </div>
               </div>
             </div>
