@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 //Route::resource('usuarios', 'UsuarioController');
-//Route::resource('filmes', 'FilmeController');
+Route::resource('filmes', 'FilmeController');
 Route::resource('series', 'SerieController');
 //Route::resource('temporadas', 'TemporadaController');
 Route::resource('episodios', 'EpisodioController');

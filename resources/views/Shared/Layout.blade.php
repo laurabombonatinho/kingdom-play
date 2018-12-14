@@ -30,14 +30,14 @@
     <!-- Custom Font Icons CSS-->
     <link rel="stylesheet" href="{{ asset('css/font.css') }}">
     <!-- Google fonts - Muli-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('https://fonts.googleapis.com/css?family=Muli:300,400,700') }}">
+    <link rel="stylesheet" href="{{ asset('https://use.fontawesome.com/releases/v5.5.0/css/all.css') }}" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" id="theme-stylesheet" href="{{ asset('css/style.default.css') }}">
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -51,23 +51,23 @@
 	  
         <div class="container-fluid d-flex align-items-center justify-content-between">
           <div class="navbar-header">
-            <!-- Navbar Header--><a href="/" class="navbar-brand">
+            <!-- Navbar Header--><a href="inicio" class="navbar-brand">
               <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Kingdom</strong><strong>Play</strong></div>
               <div class="brand-text brand-sm"><strong class="text-primary">K</strong><strong>P</strong></div></a>
             <!-- Sidebar Toggle Btn-->
-            <button class="sidebar-toggle"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
+            <button class="sidebar-toggle"><i class="fa"></i></button>
           </div>
            
-		   <!-- Input Pesquisar -->
+		   <!-- Input Pesquisar 
 		  <div class="input-group col-sm-6">
 			<input type="text" class="form-control" >
 				<div class="input-group-append">  
 				 <button class="btn btn-success" style="background:#cc0000; border:#cc0000" type="submit">Pesquisar</button>  
 				</div>
 		  </div>	
-		  <!-- End Input Pesquisar -->
+		   End Input Pesquisar -->
 		  
-		  <!-- Megamenu-->
+		  <!-- Megamenu-
             <div class="list-inline-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="nav-link">Categorias </i></a>
               <div class="dropdown-menu megamenu text-center">
                 <div class="row">
@@ -106,7 +106,7 @@
                 </div>
               </div>
             </div>
-            <!-- Megamenu end     -->
+             Megamenu end     -->
 		  
            
             <!-- Log out -->
@@ -122,16 +122,10 @@
       <!-- Sidebar Navigation-->
       <nav id="sidebar">
         <!-- Sidebar Header-->
-        <div class="sidebar-header d-flex align-items-center">
-          <div class="avatar"><img src="img/avatar-6.jpg" alt="..." class="img-fluid rounded-circle"></div>
-          <div class="title">
-            <h1 class="h5">Mark Stephen</h1>
-           
-          </div>
-        </div>
+
         <!-- Sidebar Navidation Menus-->
         <ul class="list-unstyled">
-                <li class="active"><a href="index.html"> <i class="icon-home"></i>Início </a></li>
+                <li class="active"><a href="inicio"> <i class="icon-home"></i>Início </a></li>
                 <!-- <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li> -->
                 <!-- <li><a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li> -->
                 <!-- <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Example dropdown </a> -->
@@ -143,13 +137,14 @@
                 <!-- </li> -->
                 <!-- <li><a href="login.html"> <i class="icon-logout"></i>Login page </a></li> -->
         <ul class="list-unstyled">
-          <li> <a href="#"> <i class="icon-list-1"></i>Minha lista </a></li>
-		  <li> <a href="#"> <i class="icon-chart"></i>Estatisticas </a></li>
-          <li> <a href="#"> <i class="icon-light-bulb"></i>Sugestões </a></li>
-          <li> <a href="#"> <i class="fas fa-fire"></i>Novidades </a></li>
-		  <li> <a href="#"> <i class="far fa-clock"></i>Recentes </a></li>
-		  <li> <a href="#"> <i class="fas fa-splotch"></i>Populares </a></li>
-		<li><a href="#"> <i class="icon-logout"></i>Sair </a></li>          	
+          <li> <a href="{{route('filmes.index')}}"> <i class="fa fa-film"></i>Filmes</a></li>
+          <li> <a href="{{route('series.index')}}"> <i class="fa fa-video-camera"></i>Séries</a></li>
+          <li> <a href="{{route('temporadas.index')}}"> <i class="icon-list-1"></i>Temporadas</a></li>
+          <li> <a href=""> <i class="fa fa-heart"></i>Favoritos</a></li>
+          <li> <a href=""> <i class="icon-light-bulb"></i>Sugestões</a></li>
+
+		    <li><a href="#"> <i class="icon-logout"></i>Sair </a></li>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </ul>
       </nav>
       <!-- Sidebar Navigation end-->
@@ -157,7 +152,6 @@
 	  <div class="container">
             @yield('content')
         </div>
-
         <footer class="footer">
           <div class="footer__block block no-margin-bottom">
             <div class="container-fluid text-center">
@@ -170,13 +164,13 @@
       </div>
     </div>
     <!-- JavaScript files-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper.js/umd/popper.min.js"> </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
-    <script src="js/charts-home.js"></script>
-    <script src="js/front.js"></script>
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/popper.js/umd/popper.min.js') }}"> </script>
+    <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('vendor/jquery.cookie/jquery.cookie.js') }}"> </script>
+    <script src="{{ asset('vendor/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ asset('vendor/jquery-validation/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('js/charts-home.js') }}"></script>
+    <script src="{{ asset('js/front.js') }}"></script>
   </body>
 </html>

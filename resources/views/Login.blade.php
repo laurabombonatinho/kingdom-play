@@ -29,7 +29,6 @@
   </head>
   <body>
       <nav class="navbar">
-      <a href="{{route('filmes.index')}}" class="signup">Listar filmes</a>
           <div class="navbar-brand" href="#">
             <!-- <img src="imgs/logo.png" width="60" class="d-inline-block align-top" alt="">
             <label style="margin-top:20px; font-size: 26px; font-weight: bold; color:#cc0000">&nbspKingdom Play</label> -->
@@ -55,16 +54,16 @@
 
 
                     <div class="form-group">
-                      <input id="login-username" type="text" name="loginUsername" required data-msg="Please enter your username" class="input-material">
-                      <label for="login-username" class="label-material">Usuário</label>
+                      <label for="login-username" class="label-material">Email</label>
+                      <input type="text" class="form-control" name="loginUsername" >
                     </div>
                     <div class="form-group">
-                      <input id="login-password" type="password" name="loginPassword" required data-msg="Please enter your password" class="input-material">
                       <label for="login-password" class="label-material">Senha</label>
+                      <input type="password" class="form-control" name="loginPassword" >
 
                     </div><a id="login" href="/" class="btn btn-primary">Entrar</a>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
-                  </form><a href="#" class="forgot-pass">Esqueceu sua senha?</a><br><small>Não possui conta? </small><a href="{{route('usuarios.create')}}" class="signup">Cadastre-se</a>
+                  </form><small>Não possui conta? </small><a href="{{route('usuarios.create')}}" class="signup">Cadastre-se</a>
                 </div>
               </div>
             </div>

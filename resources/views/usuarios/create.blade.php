@@ -50,18 +50,19 @@
                   <form method="post" action="{{route ('usuarios.store')}}">
                 {{ csrf_field() }}
                     <div class="form-group">
-                      <input id="login-username" type="text" name="nome" required data-msg="Informe seu nome" class="input-material">
                       <label for="login-username" class="label-material">Nome</label>
+                      <input type="text" class="form-control" name="nome">
                     </div>
                     <div class="form-group">
-                      <input id="login-email" type="email" name="email" required data-msg="Informe seu e-mail" class="input-material">
-                      <label for="login-email" class="label-material">E-mail</label>
+                      <label for="login-email" required class="label-material">E-mail</label>
+                      <input type="text" class="form-control" name="email">
                     </div>
                     <div class="form-group">
-                      <input id="login-password" type="password" name="senha" required data-msg="Informe sua senha" class="input-material">
                       <label for="login-password" class="label-material">Senha</label>
+                      <input type="password" class="form-control" name="senha">
+                      <br><br>
+                      <button type="submit" class="btn btn-primary">Cadastrar</button>
                       <a href="{{ url()->previous() }}" class="btn btn-default">Voltar</a> 
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
                     </form>
               </div>
               </div>

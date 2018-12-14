@@ -12,22 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Login');
 });
 
 Route::get('/Login', function () {
     return view('Login');
 });
 
-/*Route::get('/Cadastro', function () {
-    return view('Usuario/Cadastro');
-});*/
+Route::get('/inicio', function () {
+    return view('welcome');
+});
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-//Route::get('logout', 'Auth\LoginController@logout');
 
 Route::get('/usuarios/produtos/{id}', 'UsuarioController@produtos')->name('usuarios.produtos');
 Route::get('/usuarios/remove/{id}', 'UsuarioController@remover')->name('usuarios.remove');

@@ -95,7 +95,7 @@ class UsuarioController extends Controller
         $dados = $request->all();
         Usuario::create($dados);
 
-        return redirect()->route('usuarios.index');
+        return redirect()->route('welcome');
         
 
     }

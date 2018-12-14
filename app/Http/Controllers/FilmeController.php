@@ -69,14 +69,14 @@ class FilmeController extends Controller
      */
     public function store(Request $request)
     {
-      /*  $dados = $request->all();
+        $dados = $request->all();
         $filmes = Filme::create($dados); 
         
         if($filmes){
         return response()->json(['data' =>$filmes, 'status'=>true]);
         }else{
         return response()->json(['data' =>'Erro ao criar filme', 'status'=>false]);
-        }*/
+        }
            ////
         $validator = $this->validarFilme($request);
         if($validator->fails()){
